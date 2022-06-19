@@ -1,0 +1,118 @@
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #db63ff;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    font-family: arial;
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #f1d4fa;
+    color: black;
+  }
+  
+  /* Main content */
+  .main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+  }
+
+  /* Estilo de tabla */
+  table {
+    font-family: arial;
+    border-collapse: collapse;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(183, 16, 238, 0.252);
+  }
+  
+  td {
+    border: 1px solid #4a0573;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+  }
+
+  th {
+    border: 1px solid #4a0573;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+  }
+
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* MODAL ESTILO*/
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  .images img {
+    width: 80%;
+    cursor: pointer;
+    transition: 0.3s all ease;
+  }
+  .images img:hover {
+    transform: scale(0.9);
+  }
+  .modal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    z-index: 1;
+    overflow: auto;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .modalContent {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .modalImg {
+    width: 80%;
+    max-width: 700px;
+  }
+  .modalTxt {
+    margin-top: 1em;
+  }
+  .close {
+    position: absolute;
+    top: 1em;
+    right: 1.5em;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  .modal.appear {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .modal.appear .modalImg,
+  .modal.appear .modalTxt {
+    animation: zoom 0.3s linear;
+  }
+  @keyframes zoom {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }

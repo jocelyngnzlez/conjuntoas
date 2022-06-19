@@ -1,0 +1,79 @@
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #db63ff;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    font-family: arial;
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #f1d4fa;
+    color: black;
+  }
+  
+  /* Main content */
+  .main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+  }
+
+  html {
+    font-family: arial;
+  }
+
+  /* Table CSS*/
+  table {
+    font-family: arial;
+    border-collapse: collapse;
+    width: 50%;
+    box-shadow:0 4px 8px 0 rgba(183, 16, 238, 0.252);
+  }
+  
+  td {
+    border: 1px solid #4a0573;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+  }
+
+  th {
+    border: 1px solid #4a0573;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+  }
+
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Formato imagen*/
+  div.polaroid {
+    width: 20%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(183, 16, 238, 0.2), 0 6px 20px 0 rgba(183, 16, 238, 0.19);
+    margin-bottom: 25px;
+  }
+  
+  div.container {
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  p.textoindex {
+    text-align: justify;
+    text-justify: inter-word;
+  }
